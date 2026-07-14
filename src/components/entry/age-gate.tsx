@@ -2,6 +2,7 @@
 
 import { useEffect, useState, type ReactNode } from "react";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 import { VoraLogo } from "@/components/brand/vora-logo";
 import { Button } from "@/components/ui/button";
 import { useVoraStore } from "@/stores/vora-store";
@@ -68,6 +69,11 @@ export function AgeGate() {
         <Button className="mt-10 w-full" onClick={() => setStep("age")}>
           Continuar
         </Button>
+        <p className="mt-4 text-center text-xs text-[var(--muted)]">
+          <Link href="/" className="underline-offset-2 hover:underline">
+            Voltar à apresentação
+          </Link>
+        </p>
       </>,
     );
   }

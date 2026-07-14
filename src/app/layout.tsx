@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
 import { Toaster } from "sonner";
 import { DesktopHeader, MobileNav } from "@/components/navigation/app-nav";
+import { AppMain } from "@/components/navigation/app-main";
 import "./globals.css";
 
 const outfit = Outfit({
@@ -27,7 +28,7 @@ export default function RootLayout({
           Protótipo — dados e perfis fictícios
         </div>
         <DesktopHeader />
-        <main className="pb-nav md:pb-0">{children}</main>
+        <AppMain>{children}</AppMain>
         <MobileNav />
         <Toaster theme="dark" position="top-center" richColors />
       </body>

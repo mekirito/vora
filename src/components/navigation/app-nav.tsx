@@ -28,6 +28,8 @@ export function MobileNav() {
 
   const hide =
     pathname === "/" ||
+    pathname === "/entrar" ||
+    pathname === "/trabalhe-conosco" ||
     pathname.startsWith("/reserva/") ||
     pathname.startsWith("/perfil/");
 
@@ -73,7 +75,14 @@ export function DesktopHeader() {
   const pathname = usePathname();
   const session = useVoraStore((s) => s.session);
 
-  if (pathname === "/" || !session.onboardingComplete) return null;
+  if (
+    pathname === "/" ||
+    pathname === "/entrar" ||
+    pathname === "/trabalhe-conosco" ||
+    !session.onboardingComplete
+  ) {
+    return null;
+  }
 
   return (
     <header className="sticky top-0 z-40 hidden border-b border-[var(--border)] bg-[var(--carbon)]/90 backdrop-blur-md md:block">

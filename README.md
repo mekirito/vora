@@ -69,7 +69,9 @@ public/profiles/        # Placeholders editoriais SVG
 
 | Rota | Função |
 |------|--------|
-| `/` | Entrada e verificação de maioridade |
+| `/` | Landing page editorial |
+| `/entrar` | Maioridade e onboarding |
+| `/trabalhe-conosco` | Recrutamento premium / temporada |
 | `/descobrir` | VORA Concierge |
 | `/perfil/[slug]` | Perfil completo |
 | `/reservas` | Lista de reservas |
