@@ -28,6 +28,52 @@ export interface RecruitStep {
   body: string;
 }
 
+export interface EventPerk {
+  title: string;
+  body: string;
+}
+
+export const EVENT_INTRO = {
+  eyebrow: "Eventos",
+  title: "A vitrine também acontece ao vivo.",
+  body: "A VORA aposta forte em companhia para eventos — galas, estreias, corporativos, arte e nightlife com critério. É presença, não catálogo. E quem está na seleção tem condições especiais para esse circuito.",
+};
+
+export const EVENT_PERKS: EventPerk[] = [
+  {
+    title: "Agenda curada",
+    body: "Convites e oportunidades alinhadas ao seu estilo — sem spam de any party.",
+  },
+  {
+    title: "Ticket de evento elevado",
+    body: "Companhia para ocasiões formais e sociais com valor de experiência compatível com a linha premium.",
+  },
+  {
+    title: "Briefing claro",
+    body: "Dress code, duração, região e combinados definidos antes do aceite. Você decide com informação.",
+  },
+  {
+    title: "Prioridade na vitrine de eventos",
+    body: "Perfis aprovados para eventos ganham destaque quando o cliente busca companhia para a noite certa.",
+  },
+  {
+    title: "Deslocamento em ocasiões selecionadas",
+    body: "Para eventos elegíveis, a plataforma prevê apoio de transfer — mais foco na presença, menos fricção.",
+  },
+  {
+    title: "Apoio no dia",
+    body: "Canal de suporte ativo durante o horário do evento. Segurança sem burocracia teatral.",
+  },
+  {
+    title: "Conta na temporada",
+    body: "Faturamento de eventos entra no ranking semestral e nos billboards de carreira — presença ao vivo também sobe.",
+  },
+  {
+    title: "Respeito aos limites",
+    body: "Eventos são experiências sociais adultas. Combinados claros, zero pressão por além do acordado.",
+  },
+];
+
 export const SEASON_PRIZES: SeasonPrize[] = [
   {
     place: 1,
@@ -144,8 +190,8 @@ export const RECRUIT_STEPS: RecruitStep[] = [
   },
   {
     n: "04",
-    title: "Temporada",
-    body: "Atue na descoberta, acumule billboards e dispute o ranking semestral.",
+    title: "Temporada e eventos",
+    body: "Atue na descoberta, no circuito de eventos, acumule billboards e dispute o ranking semestral.",
   },
 ];
 

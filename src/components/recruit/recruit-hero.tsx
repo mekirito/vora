@@ -57,8 +57,8 @@ export function RecruitHero() {
               Entre na vitrine certa.
             </h1>
             <p className="max-w-md text-base text-[var(--silver)] sm:text-lg">
-              Clientes verificados. Pagamento antes. Temporada que recompensa o
-              topo.
+              Clientes verificados. Pagamento antes. Eventos com critério.
+              Temporada que recompensa o topo.
             </p>
           </div>
 
@@ -76,6 +76,13 @@ export function RecruitHero() {
               className="inline-flex h-12 w-full items-center justify-center rounded-[16px] px-5 text-base font-medium text-[var(--ivory)] transition-colors touch-target hover:bg-white/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--ring)] sm:w-auto"
             >
               Ver temporada
+            </button>
+            <button
+              type="button"
+              onClick={() => scrollTo("eventos")}
+              className="inline-flex h-12 w-full items-center justify-center rounded-[16px] px-5 text-base font-medium text-[var(--silver)] transition-colors touch-target hover:bg-white/5 hover:text-[var(--ivory)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--ring)] sm:w-auto"
+            >
+              Eventos
             </button>
           </div>
 
