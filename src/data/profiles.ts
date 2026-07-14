@@ -1,5 +1,12 @@
 import type { Profile } from "@/types";
 
+/** Foto oficial da marca — usada em todos os perfis do protótipo */
+const BRAND_MODEL_IMAGES = [
+  "/profiles/brand-model.png",
+  "/profiles/brand-model.png",
+  "/profiles/brand-model.png",
+];
+
 export const profiles: Profile[] = [
   {
     id: "p1",
@@ -28,11 +35,7 @@ export const profiles: Profile[] = [
       "Gosta de dança",
       "Jantar",
     ],
-    images: [
-      "/profiles/marina-1.svg",
-      "/profiles/marina-2.svg",
-      "/profiles/marina-3.svg",
-    ],
+    images: BRAND_MODEL_IMAGES,
     reviewSummary: {
       communication: 4.9,
       punctuality: 4.8,
@@ -71,10 +74,7 @@ export const profiles: Profile[] = [
     bio: "Curadoria de noites com energia — shows, galerias, bares bons. Prefiro espontaneidade com respeito e clareza nos combinados.",
     tagline: "Energia leve, presença firme.",
     compatibilityReasons: ["Disponível agora", "2,8 km", "Nightlife", "Inglês"],
-    images: [
-      "/profiles/clara-1.svg",
-      "/profiles/clara-2.svg",
-    ],
+    images: BRAND_MODEL_IMAGES,
     reviewSummary: {
       communication: 4.7,
       punctuality: 4.6,
@@ -113,10 +113,7 @@ export const profiles: Profile[] = [
     bio: "Companhia para jantares longos, exposições e conversas que não precisam de pressa. Elegante sem teatralidade.",
     tagline: "Presença serena, conversa profunda.",
     compatibilityReasons: ["3,2 km", "Jantar", "Cultural", "Italiano"],
-    images: [
-      "/profiles/helena-1.svg",
-      "/profiles/helena-2.svg",
-    ],
+    images: BRAND_MODEL_IMAGES,
     reviewSummary: {
       communication: 5.0,
       punctuality: 5.0,
@@ -161,10 +158,7 @@ export const profiles: Profile[] = [
       "Até 1,62 m",
       "Cabelo escuro",
     ],
-    images: [
-      "/profiles/sofia-1.svg",
-      "/profiles/sofia-2.svg",
-    ],
+    images: BRAND_MODEL_IMAGES,
     reviewSummary: {
       communication: 4.8,
       punctuality: 4.5,
@@ -203,10 +197,7 @@ export const profiles: Profile[] = [
     bio: "Companhia para eventos, noites em movimento e planos que saem do roteiro. Comunicação clara e energia positiva.",
     tagline: "Movimento, humor e presença.",
     compatibilityReasons: ["Disponível agora", "Evento", "Espanhol"],
-    images: [
-      "/profiles/beatriz-1.svg",
-      "/profiles/beatriz-2.svg",
-    ],
+    images: BRAND_MODEL_IMAGES,
     reviewSummary: {
       communication: 4.6,
       punctuality: 4.7,
@@ -250,10 +241,7 @@ export const profiles: Profile[] = [
       "Jantar",
       "Até 1,62 m",
     ],
-    images: [
-      "/profiles/laura-1.svg",
-      "/profiles/laura-2.svg",
-    ],
+    images: BRAND_MODEL_IMAGES,
     reviewSummary: {
       communication: 4.9,
       punctuality: 4.9,
@@ -292,10 +280,7 @@ export const profiles: Profile[] = [
     bio: "Presença para eventos e jantares com estilo. Comunicação aberta, combinados claros, zero improviso desconfortável.",
     tagline: "Estilo com clareza.",
     compatibilityReasons: ["Evento", "Fashion", "Inglês"],
-    images: [
-      "/profiles/isabela-1.svg",
-      "/profiles/isabela-2.svg",
-    ],
+    images: BRAND_MODEL_IMAGES,
     reviewSummary: {
       communication: 4.8,
       punctuality: 4.7,
@@ -339,10 +324,7 @@ export const profiles: Profile[] = [
       "Cabelo escuro",
       "Até 1,62 m",
     ],
-    images: [
-      "/profiles/julia-1.svg",
-      "/profiles/julia-2.svg",
-    ],
+    images: BRAND_MODEL_IMAGES,
     reviewSummary: {
       communication: 4.9,
       punctuality: 4.8,
@@ -381,10 +363,7 @@ export const profiles: Profile[] = [
     bio: "Para noites com movimento — dança, música ao vivo, planos espontâneos. Sempre com respeito e combinados claros.",
     tagline: "Ritmo e espontaneidade.",
     compatibilityReasons: ["Disponível agora", "Dança", "Nightlife"],
-    images: [
-      "/profiles/camila-1.svg",
-      "/profiles/camila-2.svg",
-    ],
+    images: BRAND_MODEL_IMAGES,
     reviewSummary: {
       communication: 4.5,
       punctuality: 4.4,
@@ -422,11 +401,7 @@ export const profiles: Profile[] = [
     bio: "Companhia para jantares formais, eventos e experiências gastronômicas. Multilíngue, discreta e atenta aos detalhes.",
     tagline: "Refinamento sem exagero.",
     compatibilityReasons: ["2,1 km", "Francês", "Jantar", "Evento"],
-    images: [
-      "/profiles/valentina-1.svg",
-      "/profiles/valentina-2.svg",
-      "/profiles/valentina-3.svg",
-    ],
+    images: BRAND_MODEL_IMAGES,
     reviewSummary: {
       communication: 5.0,
       punctuality: 4.9,
@@ -470,11 +445,7 @@ export const profiles: Profile[] = [
       "Jantar",
       "Boa conversação",
     ],
-    images: [
-      "/profiles/amanda-1.svg",
-      "/profiles/amanda-2.svg",
-      "/profiles/amanda-3.svg",
-    ],
+    images: BRAND_MODEL_IMAGES,
     reviewSummary: {
       communication: 4.8,
       punctuality: 4.7,
@@ -513,10 +484,7 @@ export const profiles: Profile[] = [
     bio: "Companhia para eventos, vernissages e jantares com foco em conversa e presença. Discreta, pontual e atenta ao que foi combinado.",
     tagline: "Presença refinada, ritmo próprio.",
     compatibilityReasons: ["4,2 km", "Evento", "Arte e cultura", "Espanhol"],
-    images: [
-      "/profiles/renata-1.svg",
-      "/profiles/renata-2.svg",
-    ],
+    images: BRAND_MODEL_IMAGES,
     reviewSummary: {
       communication: 4.9,
       punctuality: 5.0,
