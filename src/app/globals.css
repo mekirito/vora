@@ -1,0 +1,130 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-carbon: #0a0a0a;
+  --color-graphite: #171717;
+  --color-surface: #202020;
+  --color-ivory: #f3f2ee;
+  --color-muted: #999996;
+  --color-vermilion: #ff2a16;
+  --color-vermilion-hover: #e92312;
+  --color-silver: #c7c9cc;
+  --color-border: rgb(255 255 255 / 0.1);
+
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+
+  --radius-vora: 20px;
+  --radius-vora-sm: 16px;
+  --radius-vora-lg: 24px;
+}
+
+:root {
+  --carbon: #0a0a0a;
+  --graphite: #171717;
+  --surface: #202020;
+  --ivory: #f3f2ee;
+  --silver: #c7c9cc;
+  --background: #0a0a0a;
+  --foreground: #f3f2ee;
+  --card: #171717;
+  --card-elevated: #202020;
+  --muted: #999996;
+  --accent: #ff2a16;
+  --accent-hover: #e92312;
+  --border: rgb(255 255 255 / 0.1);
+  --ring: #ff2a16;
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  min-height: 100dvh;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--accent) 35%, transparent);
+  color: var(--foreground);
+}
+
+:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+
+@keyframes orbit-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse-soft {
+  0%,
+  100% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+.orbit-spin {
+  animation: orbit-spin 1.5s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .orbit-spin,
+  .animate-pulse,
+  .motion-safe {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+.glass {
+  background: rgb(32 32 32 / 0.72);
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--border);
+}
+
+.touch-target {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+.pb-nav {
+  padding-bottom: calc(5.5rem + var(--safe-bottom));
+}
+
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    #171717 0%,
+    #202020 50%,
+    #171717 100%
+  );
+  background-size: 200% 100%;
+  animation: pulse-soft 1.6s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skeleton {
+    animation: none;
+    background: #202020;
+  }
+}
